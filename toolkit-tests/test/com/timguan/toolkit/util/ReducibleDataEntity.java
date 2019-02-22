@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class ReducibleDataDemo implements Serializable {
+public class ReducibleDataEntity implements Serializable {
     private Integer id;
 
     private Integer activityId;
@@ -57,7 +57,7 @@ public class ReducibleDataDemo implements Serializable {
 
     @Override
     public String toString() {
-        return "ReducibleDataDemo{" +
+        return "ReducibleDataEntity{" +
             "id=" + id +
             ", activityId=" + activityId +
             ", weight=" + weight +
@@ -69,8 +69,8 @@ public class ReducibleDataDemo implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) { return true; }
-        if (!(o instanceof ReducibleDataDemo)) { return false; }
-        ReducibleDataDemo that = (ReducibleDataDemo)o;
+        if (!(o instanceof ReducibleDataEntity)) { return false; }
+        ReducibleDataEntity that = (ReducibleDataEntity)o;
         return Objects.equals(id, that.id) &&
             Objects.equals(activityId, that.activityId) &&
             Objects.equals(weight, that.weight) &&
